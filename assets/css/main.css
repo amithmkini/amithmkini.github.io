@@ -14,6 +14,10 @@ body {
   background-color: oldlace;
 }
 
+noscript {
+  background-color: oldlace;
+}
+
 .container {
   margin: 50px auto;
   padding: 5px;
