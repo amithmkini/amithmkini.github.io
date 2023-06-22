@@ -130,6 +130,43 @@ button:hover {
   height: 100%;
 }
 
+#skill-container {
+  position: relative;
+  overflow: hidden;
+}
+
+#skill-container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: #d9f3df80;
+  transition: height 0.5s;
+}
+
+#skill-container:hover::before {
+  height: var(--fill-height, 0);
+}
+
+.skills-list {
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.skill {
+  margin: 0 10px;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.skill:hover {
+  color: #32a852;
+}
+
 .resume-section {
 	display: none;
 }

@@ -1,6 +1,7 @@
 (function () {
     'use strict';
     setSectionToggleEventHandler();
+    skillHover();
 })();
 
 function setSectionToggleEventHandler() {
@@ -39,4 +40,20 @@ function hideAllSections() {
     for (var i = 0; i < sections.length; i++) {
         sections[i].classList.remove('show');
     }
+}
+
+function skillHover() {
+    const skills = document.querySelectorAll('.skill');
+    const container = document.getElementById('skill-container');
+
+    skills.forEach(skill => {
+        skill.addEventListener('mouseover', () => {
+            const skillLevel = skill.getAttribute('data-skill-level');
+            container.style.setProperty('--fill-height', `${skillLevel}%`);
+        });
+
+        skill.addEventListener('mouseout', () => {
+            container.style.setProperty('--fill-height', '0');
+        });
+    });
 }
