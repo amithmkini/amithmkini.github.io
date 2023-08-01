@@ -116,6 +116,11 @@ button:hover {
   max-width: 350px;
 }
 
+#full-name {
+  font-size: 2.5rem;
+  font-family: 'Noto Sans Mono', monospace;
+}
+
 /* Make the image circular */
 .img-frame {
   position: relative;
@@ -156,13 +161,17 @@ button:hover {
 }
 
 .skills-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
   margin-bottom: 20px;
   position: relative;
   z-index: 1;
 }
 
 .skill {
-  margin: 0 10px;
   cursor: pointer;
   display: inline-block;
   transition: color 0.3s;
