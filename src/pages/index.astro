@@ -10,6 +10,9 @@ import SectionItem from "@components/SectionItem";
 import Socials from "@components/Socials.astro";
 import getSortedPosts from "@utils/getSortedPosts";
 import { SOCIALS } from "@config";
+import { Image } from 'astro:assets';
+
+import dp from "../assets/images/Amith.webp";
 
 const posts = await getCollection("blog");
 
@@ -23,7 +26,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   <main id="main-content">
     <section id="hero">
       <div class="image">
-        <img class="image-dp" src="/assets/Amith.webp" alt="Amith Kini">
+        <Image class="image-dp" src={dp} alt="Amith Kini" />
       </div>
       <div class="content">
         <p>
