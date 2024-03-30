@@ -11,7 +11,7 @@ tags:
 description: And why we need to stop using LLMs as writers
 ---
 
-import { Tweet } from "@astro-community/astro-embed-twitter";
+import TweetEmbed from "@components/TweetEmbed.astro";
 
 The internet right now is filled with bots thanks to the advances in LLM. The
 internet before 2022, umm, was not so great either. But there's a significant
@@ -52,7 +52,7 @@ Okay, and then? The `line' was never mentioned in the article later. The rest of
 the article felt like if someone asked ChatGPT to summarize a tweet and article.
 And it was. It was based on this tweet:
 
-<Tweet id="https://twitter.com/AndrewCurran_/status/1765442533671502043" />
+<TweetEmbed tweetId="https://twitter.com/AndrewCurran_/status/1765442533671502043" />
 
 Since the `line' was in an image, the article couldn't show it. But the article
 just made one up. And to top it off, going through that website showed multiple
