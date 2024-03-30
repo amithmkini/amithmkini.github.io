@@ -15,7 +15,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
+    "@astro-community/astro-embed-twitter": "^0.5.3",
     "@astrojs/check": "0.5.5",
+    "@astrojs/mdx": "^2.2.2",
     "@astrojs/rss": "4.0.5",
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/ibm-plex-mono": "^5.0.8",
