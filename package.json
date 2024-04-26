@@ -22,7 +22,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/inter": "^5.0.17",
     "@resvg/resvg-js": "^2.6.0",
-    "astro": "4.6.4",
+    "astro": "4.7.0",
     "fuse.js": "^7.0.0",
     "github-slugger": "^2.0.0",
     "remark-collapse": "^0.1.2",
