@@ -1,0 +1,24 @@
+---
+import Header from "@components/Header.astro";
+import Footer from "@components/Footer.astro";
+import Layout from "@layouts/Layout.astro";
+import Main from "@layouts/Main.astro";
+import { SITE } from "@config";
+
+import LinkButton from "@components/LinkButton.astro";
+---
+
+<Layout title={`GPTs | ${SITE.title}`}>
+  <Header activeNav="gpts" />
+  <Main pageTitle="GPTs" pageDesc="Privacy Policy">
+    <LinkButton 
+      className="underline decoration-dashed underline-offset-4 hover:text-skin-accent"
+      href="https://chatgpt.com/g/g-9eXbOgQwO-formula-1-stats"
+      newTab>
+      Formula 1 Stats GPT
+    </LinkButton> collects no personal data, and generated SQL queries are not stored or logged.
+    The generated SQL queries are sent to a hosted SQLite DB on Turso, which does not log or store any HTTP
+    requests.
+  </Main>
+  <Footer />
+</Layout>
