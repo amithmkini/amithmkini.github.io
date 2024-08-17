@@ -26,6 +26,7 @@ module.exports = {
           accent: withOpacity("--color-accent"),
           inverted: withOpacity("--color-fill"),
           university: withOpacity("--color-university"),
+          arista: withOpacity("--color-arista"),
           "section-item": withOpacity("--color-section-item"),
         },
       },

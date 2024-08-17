@@ -12,6 +12,7 @@
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
     --color-university: 80, 0, 0;
+    --color-arista: 22, 50, 91;
     --color-section-item: 211, 0, 106;
   }
   html[data-theme="dark"] {
@@ -22,6 +23,7 @@
     --color-card-muted: 138, 51, 2;
     --color-border: 171, 75, 8;
     --color-university: 255, 255, 255;
+    --color-arista: 255, 107, 1;
     --color-section-item: 235, 74, 200;
   }
   #sun-svg,

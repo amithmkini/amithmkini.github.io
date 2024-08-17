@@ -30,10 +30,11 @@ const socialCount = SOCIALS.filter(social => social.active).length;
       </div>
       <div class="content">
         <p>
-          Howdy! I am a CS Masters student at the 
-          <span id="university">Texas A&amp;M University</span>.
+          Howdy! I am a Software Engineer at  
+          <span id="arista-blue">Arista Networks</span>.
           I like to try out new tech stacks and frameworks every day so you don't have to.
-          Looking for full-time opportunities.
+          <br>
+          <span id="university">Texas A&amp;M University</span> alumni.
         </p>
         {
           // only display if at least one social link is enabled
@@ -51,9 +52,17 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 
     <section class="more-info">
       <h2>Experience</h2>
-
       <SectionItem
-        company="Texas A&amp;M University"
+        company="Arista Networks"
+        position="Software Engineer"
+        period="July 2024 - Present"
+        location="Austin, TX"
+        points={[
+          "Working on the Arista EOS (Extensible Operating System) in the routing features for Arista's Data Center Switches.",
+        ]}
+      />
+      <SectionItem
+        company="Texas A&M University"
         position="Graduate Teaching Assistant"
         period="August 2023 - December 2023"
         location="College Station, TX"
@@ -66,34 +75,14 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         company="Arista Networks"
         position="Software Engineer"
         period="July 2019 - July 2022"
-        location="Benagluru, India"
+        location="Bengaluru, India"
         points={[
           "Worked on the Arista EOS (Extensible Operating System) in the Quality of Service (QoS) for Arista's Data Center Switches.",
           "Took ownership and worked on time-sensitive feature requirements like Interface Policing and ACL-based policy-maps that were required by tier 1 network providers in Europe and ISPs in Australia."
         ]}
       />
-      <SectionItem
-        company="Arista Networks"
-        position="Software Engineer Intern"
-        period="May 2018 - July 2018"
-        location="Benagluru, India"
-        points={[
-          "Worked on Layer 2 Protocol Forwarding for ISPs who wanted to bypass CPU traps for L2 Protocol packets over pseudowire tunnels.",
-          "Designed and worked on the communication between 2 processes using C++ for hardware programming."
-        ]}
-      />
-      <SectionItem
-        company="YellowAnt"
-        position="Software Engineer"
-        period="July 2019 - July 2022"
-        location="Benagluru, India"
-        points={[
-          "Worked on integrating new apps into YellowAnt's ChatOps platform using APIs of different apps like Salesforce and Sentry",
-          "Worked on a Proof-of-Concept natural language based textual input to the chat application."
-        ]}
-      />
 
-      <div class="all-posts-btn-wrapper">
+      <!-- <div class="all-posts-btn-wrapper">
         <LinkButton href="/Resume_Amith_Kini.pdf" newTab={true}>
           Resume (PDF)
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-external-link"
@@ -105,7 +94,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
             <path d="M15 4h5v5" />
           </svg>
         </LinkButton>
-      </div>
+      </div> -->
     </section>
 
     <Hr />
@@ -164,6 +153,9 @@ const socialCount = SOCIALS.filter(social => social.active).length;
   }
   #university {
     @apply font-semibold text-skin-university;
+  }
+  #arista-blue {
+    @apply font-semibold text-skin-arista;
   }
   .social-wrapper {
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
